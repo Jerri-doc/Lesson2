@@ -627,6 +627,10 @@ video {
   height: 2rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -657,6 +661,10 @@ video {
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .max-w-5xl {
@@ -747,6 +755,12 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -791,6 +805,10 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-\[\#1A5B68\] {
